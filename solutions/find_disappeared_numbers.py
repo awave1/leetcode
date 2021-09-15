@@ -41,11 +41,7 @@ def find_disappeared_numbers_improved(nums: list[int]) -> list[int]:
         else:
             idx += 1
 
-    # missed_nums = [i + 1 for i in range(n) if nums[i] != i + 1]
-    missed_nums = []
-    for i in range(n):
-        if nums[i] != i + 1:
-            missed_nums.append(i + 1)
+    missed_nums = [i + 1 for i in range(n) if nums[i] != i + 1]
 
     return missed_nums
 
