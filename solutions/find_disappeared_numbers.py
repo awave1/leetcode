@@ -8,7 +8,10 @@ Given an array nums of n integers where nums[i] is in the range [1, n], return a
 
 
 def find_disappeared_numbers(nums: list[int]) -> list[int]:
+
     full_range = set(list(range(1, len(nums) + 1)))
+    # solution using a filter
+    # list(filter(lambda x: x not in nums, list(range(1, len(nums) + 1))))
     return list(full_range.difference(set(nums)))
 
 
