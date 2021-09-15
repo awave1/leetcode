@@ -27,7 +27,22 @@ def single_number(nums: list[int]) -> int:
     return unique_num
 
 
+def single_number_xor(nums: list[int]) -> int:
+    mask = 0
+
+    for num in nums:
+        mask ^= num
+
+    return mask
+
+
 def test_single_number():
     assert single_number([2, 2, 1]) == 1
     assert single_number([4, 1, 2, 1, 2]) == 4
     assert single_number([1]) == 1
+
+
+def test_single_number_xor():
+    assert single_number_xor([2, 2, 1]) == 1
+    assert single_number_xor([4, 1, 2, 1, 2]) == 4
+    assert single_number_xor([1]) == 1
