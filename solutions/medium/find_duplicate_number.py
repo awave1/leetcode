@@ -83,7 +83,3 @@ def test_find_duplicate_number():
     assert find_duplicate_number([3, 1, 3, 4, 2]) == 3
     assert find_duplicate_number([1, 1]) == 1
     assert find_duplicate_number([2, 2, 2, 2]) == 2
-
-
-find_duplicate_number([1, 3, 4, 2, 2])
-find_duplicate_number([2, 2, 2, 2])
