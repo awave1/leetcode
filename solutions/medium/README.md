@@ -3,7 +3,7 @@
 | Question                                                                                                                                              | Complete |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------: |
 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)                                                           |       ✅ |
-| [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)                                                                 |       ❌ |
+| [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)                                                                 |       ✅ |
 | [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)                                                     |       ❌ |
 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                                                                                 |       ❌ |
 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)                                                                                         |       ❌ |
