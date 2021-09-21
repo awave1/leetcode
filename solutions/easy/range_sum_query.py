@@ -38,7 +38,6 @@ class NumArray:
         sum_result = 0
 
         for i in range(left, right + 1):
-            print(self.nums[i])
             sum_result += self.nums[i]
 
         return sum_result
