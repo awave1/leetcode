@@ -27,8 +27,3 @@ def test_max_subarray():
     assert max_subarray([1]) == 1
     assert max_subarray([5, 4, -1, 7, 8]) == 23
     assert max_subarray([-2, -1]) == -1
-
-
-print(max_subarray([-2, -1]))
-# print(max_subarray([1]))
-# max_subarray([5, 4, -1, 7, 8])
