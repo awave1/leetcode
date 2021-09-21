@@ -35,7 +35,24 @@ def max_profit_brute_force(prices: list[int]) -> int:
     return 0 if profit < 0 else profit
 
 
+def max_profit(prices: list[int]) -> int:
+    profit = 0
+    current_min_price = prices[0]
+
+    for price in prices[1:]:
+        profit = max(profit, price - current_min_price)
+        current_min_price = min(current_min_price, price)
+
+    return profit
+
+
 def test_max_profit_brute_force():
     assert max_profit_brute_force([7, 1, 5, 3, 6, 4]) == 5
     assert max_profit_brute_force([7, 6, 4, 3, 1]) == 0
     assert max_profit_brute_force([2, 4, 1]) == 2
+
+
+def test_max_profit():
+    assert max_profit([7, 1, 5, 3, 6, 4]) == 5
+    assert max_profit([7, 6, 4, 3, 1]) == 0
+    assert max_profit([2, 4, 1]) == 2
