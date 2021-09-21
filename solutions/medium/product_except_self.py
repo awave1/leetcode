@@ -81,8 +81,3 @@ def test_product_except_self_with_reduce():
 def test_product_except_self():
     assert product_except_self([1, 2, 3, 4]) == [24, 12, 8, 6]
     assert product_except_self([-1, 1, 0, -3, 3]) == [0, 0, 9, 0, 0]
-
-
-product_except_self([1, 2, 3, 4])
-product_except_self([4, 5, 1, 8, 2])
-product_except_self([-1, 1, 0, -3, 3])
