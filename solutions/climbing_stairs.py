@@ -9,6 +9,9 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 
 
 def climbing_stairs(n_stairs: int) -> int:
+    if n_stairs < 0:
+        return 0
+
     if n_stairs <= 1:
         return 1
 
@@ -24,6 +27,9 @@ def climbing_stairs(n_stairs: int) -> int:
 
 
 def climbing_stairs_recursive(n_stairs: int) -> int:
+    if n_stairs < 0:
+        return 0
+
     if n_stairs <= 1:
         return 1
 
