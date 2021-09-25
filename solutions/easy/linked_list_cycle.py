@@ -25,11 +25,44 @@ Explanation: There is no cycle in the linked list.
 """
 
 # Definition for singly-linked list.
+from typing import Optional
+
+
 class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
 
 
-def has_cycle(self, head: ListNode) -> bool:
-    pass
+def has_cycle(head: ListNode, pos: Optional[int] = None) -> bool:
+    """
+    src: https://en.wikipedia.org/wiki/Cycle_detection
+    """
+    if not head:
+        return False
+
+    slow = head
+    fast = head
+
+    while fast.next and fast.next.next:
+        fast = fast.next.next
+        slow = slow.next
+
+        if fast == slow:
+            return True
+
+    return False
+
+
+list1 = ListNode(3)
+list1.next = ListNode(2)
+list1.next.next = ListNode(0)
+list1.next.next.next = ListNode(-4)
+list1.next.next.next = list1.next
+
+
+def test_has_cycle():
+    assert has_cycle(list1, 1) == True
+
+
+has_cycle(list1, 1)
