@@ -14,7 +14,7 @@ Source: [LeetCode patterns](https://seanprashad.com/leetcode-patterns/)
 | [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)                                         |       ✅ |
 | [Counting Bits](https://leetcode.com/problems/counting-bits/)                                                                   |       ✅ |
 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                                           |       ✅ |
-| [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                                           |       ❌ |
+| [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                                           |       ✅ |
 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)                                                 |       ❌ |
 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)                                       |       ❌ |
 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)                         |       ❌ |
